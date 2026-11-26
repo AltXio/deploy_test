@@ -62,17 +62,34 @@ Vacía el carrito eliminando todos los productos almacenados.
   }
 }
 
+/**
+Representa a un usuario del sistema que puede realizar compras.
+ */
 class Usuario {
+  /**
+Crea una instancia de Usuario con un carrito de compras propio.
+@param {string} nombre - El nombre del usuario.
+@param {string} correo - El correo electrónico del usuario.
+   */
   constructor(nombre, correo) {
     this.nombre = nombre;
     this.correo = correo;
     this.carrito = new Carrito();
   }
 
+
+  /**
+Añade un producto al carrito de compras del usuario.
+@param {Producto} producto - El producto que se desea añadir.
+   */
   agregarProductoAlCarrito(producto) {
     this.carrito.agregarProducto(producto);
   }
 
+
+  /**
+Finaliza el proceso de compra, mostrando el total en consola y vaciando el carrito.
+   */
   finalizarCompra() {
     const total = this.carrito.calcularTotalCarrito();
     console.log(`Usuario ${this.nombre} ha realizado una compra por un total de ${total}€`);
