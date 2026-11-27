@@ -13,4 +13,4 @@ Este repositorio contiene una implementación orientada a objetos en JavaScript 
    ```bash
    git clone [https://github.com/AltXio/deploy_test.git](https://github.com/AltXio/deploy_test.git)
 
-### 🔎 Para más información usa la Wiki de este repositorio.
+### 🔎 Para más información usa la [Wiki](https://github.com/AltXio/deploy_test/wiki) de este repositorio.
